@@ -1,0 +1,83 @@
+# Ignore various files we don't want to package
+
+#
+# General stuff we don't want
+#
+
+# binaries / libraries
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+
+# archives
+*.zip
+*.gz
+*.tar
+*.bz2
+*.xz
+*.7z
+*.rar
+
+# scripts
+*.bat
+*.cmd
+#*.sh
+
+# windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# folder config file
+[Dd]esktop.ini
+
+# vscode
+*.code-workspace
+
+#
+# CoD specific files
+#
+
+# codradiant files
+**/maps/MP/*.bak
+**/maps/MP/*.lin
+**/maps/MP/*.map
+**/maps/MP/*.poly
+**/maps/MP/*.prt
+
+# ignore any non-mp maps
+**/maps/*
+!**/maps/MP/
+
+# gametype code
+**/maps/MP/gametypes/**
+!**/maps/MP/gametypes/tow.txt
+!**/maps/MP/gametypes/tow.gsc
+!**/maps/MP/gametypes/frz.txt
+!**/maps/MP/gametypes/frz.gsc
+!**/maps/MP/gametypes/oic.txt
+!**/maps/MP/gametypes/oic.gsc
+!**/maps/MP/gametypes/gun.txt
+!**/maps/MP/gametypes/gun.gsc
+!**/maps/MP/gametypes/shp.txt
+!**/maps/MP/gametypes/shp.gsc
+!**/maps/MP/gametypes/jmp.txt
+!**/maps/MP/gametypes/jmp.gsc
+!**/maps/MP/gametypes/prophunt.txt
+!**/maps/MP/gametypes/prophunt.gsc
+!**/maps/MP/gametypes/dsl.txt
+!**/maps/MP/gametypes/dsl.gsc
+!**/maps/MP/gametypes/battleroyale.txt
+!**/maps/MP/gametypes/battleroyale.gsc
+
+# other useless cod files
+**/collmaps/
+**/eagle/
+
+# packaged assets
+*.pk3
+
